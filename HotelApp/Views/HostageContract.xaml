@@ -32,6 +32,29 @@
                              Minimum="0" Maximum="10" Increment="1" />
 
                 </Grid>
+
+                <Label Text="Tipo de Acomodação:"/>
+                <Picker x:Name="room_pck"/>
+
+                <Border Padding="10" Margin="10">
+                    <VerticalStackLayout>
+                        <Label Text="Período de Estadia" />
+
+                        <HorizontalStackLayout>
+                            <Label Text="Checkin:" />
+                            <DatePicker x:Name="checkin_dtpck" Format="dd/MM/yyyy"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Checkout:" />
+                            <DatePicker x:Name="checkout_dtpck" Format="dd/MM/yyyy"/>
+                        </HorizontalStackLayout>
+
+                        <Button Text="Próximo"/>
+
+                    </VerticalStackLayout>
+                </Border>
+
             </VerticalStackLayout>
         </Border>
 
