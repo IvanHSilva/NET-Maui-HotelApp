@@ -60,7 +60,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.21" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 	</ItemGroup>
 
@@ -68,15 +68,12 @@
 	  <MauiXaml Update="Views\HostageContract.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HostageRoom.xaml">
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Views\HostageContract.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\HostingContract.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\HostingRoom.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  </None>
 	</ItemGroup>
 
 </Project>
